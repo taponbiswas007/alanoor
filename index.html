@@ -9,6 +9,9 @@
     <!--========= AOS Animation cdn link ========-->
     <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
 
+    <!--========= swiper cdn link ===========-->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@9/swiper-bundle.min.css"/>
+
     <!--======== bootstrap cdn link ========-->
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-9ndCyUaIbzAi2FUVXJi0CjmCapSmO7SnpJef0486qhLnuZ2cdeRhO02iuK6FUUVM" crossorigin="anonymous">
 
@@ -29,7 +32,9 @@
 
 </head>
 <body>
-
+    <section class="welcome-section">
+        <marquee class="welcome" behavior="" direction="right">Welcome to our shop</marquee>
+    </section>
         <!--========= header part start ==========-->
     <section class="header">
         <div class="container">
@@ -42,18 +47,7 @@
                     <ul class="navitem">
                         <li><a class="navlink" href="#">home</a></li>
                         <li><a class="navlink" href="#">product</a></li>
-                        <li class="price"><a class="navlink price-list" href="#">price list</a>
-                            <ul class="pricelist">
-                                <li><a href="#" class="priceitem">gazi super</a></li>
-                                <li><a href="#" class="priceitem">brb super</a></li>
-                                <li><a href="#" class="priceitem">brb cables</a></li>
-                                <li><a href="#" class="priceitem">rr super</a></li>
-                                <li><a href="#" class="priceitem">rr cables</a></li>
-                                <li><a href="#" class="priceitem">bbs cables</a></li>
-                                <li><a href="#" class="priceitem">bizli super</a></li>
-                                <li><a href="#" class="priceitem">bizli cables</a></li>
-                            </ul>
-                        </li>
+                        <li class="price"><a class="navlink price-list" href="#">price list</a></li>
                         <li><a class="navlink" href="#">contact</a></li>
                         <li><a class="navlink" href="#">about</a></li>
                     </ul>
@@ -65,13 +59,48 @@
             </nav>
         </div>
     </section>
+        <!--============ header part end ============-->
 
+        <!-- hero part start  -->
+    <section class="hero-area">
+        <div class="container">
+            <div class="hero-main-area swiper mySwiper">
+                <div class="swiper-wrapper">
+                    
+                    <div class="banner swiper-slide">
+                        <div class="banner-details">
+                            <div class="banner-logo">
+                                <img src="images/g-logo.png" alt="">
+                            </div>
+                            <div class="banner-centent">
+                                <h1>Gazi wires ltd</h1>
+                                <h2>authorized dealer</h2>
+                                <h3>alanoor electric store</h3>
+                                <p>Introducing Gazi super wire, the ultimate solution for motor winding with unmatched reliability and confidence. Our high -Quality wire is specifically designed to meet the rigorous demands of motor winding applications.
+                                    With its exceptional conductivity and durability, Gazi super wire ensures optimal performance and longevity, guaranteeing smooth operation and reduced maintenance costs. Trust in Gazi super wire for your moto winding needs and experience the difference in quality and performence.
+                                </p>
+                            </div>
+                            
+                        </div>
+                        <div class="images"></div>
+                    </div>
+                    
+                </div>
+                <div class="swiper-button-next"></div>
+                <div class="swiper-button-prev"></div>
+                <div class="swiper-pagination"></div>
+            </div>
+        </div>
+    </section>
+    <script src="https://cdn.jsdelivr.net/npm/swiper@9/swiper-bundle.min.js"></script>
 
     <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
     
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.7.0/jquery.min.js"></script>
+    
     <script src="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/js/all.min.js" integrity="sha512-fD9DI5bZwQxOi7MhYWnnNPlvXdp/2Pj3XSTRrFs5FQa4mizyGLnJcN6tuvUS6LbmgN1ut+XGSABKvjN0H6Aoow==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
 
     <script src="js/main.js"></script>
+   
 </body>
 </html>

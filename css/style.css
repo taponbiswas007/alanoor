@@ -22,6 +22,12 @@ li{
 img{
     width: 100%;
 }
+.welcome{
+    background: gainsboro;
+    color: red;
+    font-weight: 400;
+    font-size: 20px;
+}
 .header{
     box-shadow: 0px 0px 7px 1px rgba(128,128,128,0.75);
 
@@ -85,30 +91,32 @@ img{
 .pricelist{
    position: absolute;
     left: 0;
-    width: 150px;
+    width: 300px;
     background: rgb(194, 196, 192);
     border-radius: 10px;
     padding: 15px 10px;
     display: none;
     
 }
+.hero-main-area{
+    width: 100%;
+    border: 2px solid gray;
+    border-radius: 10px;
+    margin-top: 20px;
+    box-shadow: 0px 0px 7px 1px rgba(128,128,128,0.75);
 
-.priceitem{
-    text-transform: uppercase;
-    font-size: 16px;
-    font-weight: 500;
-    color: black;
-    position: relative;
-    margin-bottom: 10px;
 }
-.priceitem:hover.priceitem:after{
-    content: ' ';
-    background: grey;
-    height: 3px;
-    width: 70%;
-    position: absolute;
-    bottom: -3px;
-    left: 0;
-    border-radius: 3px;
-    transition: .5s ease;
+.banner-details{
+    display: flex;
+    align-items: flex-start;
+}
+.banner-logo{
+    width: 200px;
+    height: 200px;
+}
+h1{
+    font-size: 30px;
+    font-weight: 600;
+    color: green;
+    text-transform: uppercase;
 }
