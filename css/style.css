@@ -10,7 +10,7 @@
 
 }
 body{
-    background: #ffff;
+    background: url(/images/body-bg1.jpg) no-repeat 0 0 / 100% 100%;
     font-family: 'Poppins', sans-serif;
 }
 a{
@@ -22,24 +22,53 @@ li{
 img{
     width: 100%;
 }
-.welcome{
-    background: gainsboro;
-    color: red;
-    font-weight: 400;
-    font-size: 20px;
+
+/* company identity area start */
+.company-indentity{
+    background: rgba(255, 255,255,.85);
 }
+.company-name-area{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 10px 0 ;
+}
+.company-logo{
+    width: 45px;
+}
+.company-name{}
+.company-name h1{
+    color: rgb(15, 110, 30);
+    text-transform: uppercase;
+    font-size: 25px;
+    font-weight: 600;
+    margin-bottom: 0;
+}
+.company-address{
+    text-transform: uppercase;
+    color: rgb(129, 12, 12);
+    font-size: 15px;
+    font-weight: 500;
+    text-align: center;
+    margin-bottom: 0;
+}
+/* header area start */
+
 .header{
     box-shadow: 0px 0px 7px 1px rgba(128,128,128,0.75);
+    background: rgba(255,255,255,.85);
 
 }
 .logo{
-    width: 100px;
+    width: 65px;
+    height: 65px;
 }
 .navbar{
     display: flex;
     justify-content:space-between;
     align-items: center;
     box-shadow: 255,255,255,.25;
+    padding : 0 ;
 }
 .navitem{
     display: flex;
@@ -52,7 +81,7 @@ img{
     text-transform: uppercase;
     font-size: 16px;
     font-weight: 500;
-    color: black;
+    color: rgb(15, 110, 30);
     position: relative;
 }
 .navlink:hover.navlink:after{
@@ -72,24 +101,24 @@ img{
     column-gap: 30px;
 }
 .joinbtn{
-    background: yellowgreen;
+    background: rgb(15, 110, 30);
     border: none;
     text-transform: uppercase;
     font-size: 16px;
     font-weight: 500;
-    color: black;
+    color: #ffff;
     padding: 10px;
-    border-radius: 5px;
+    border-radius: 30px;
 }
 .joinbtn:hover{
-    background: yellow;
+    background: rgb(10, 56, 17);
     transition: .5s ease;
 }
 .price{
     position: relative;
 }
 .pricelist{
-   position: absolute;
+    position: absolute;
     left: 0;
     width: 300px;
     background: rgb(194, 196, 192);
@@ -98,25 +127,70 @@ img{
     display: none;
     
 }
+
+/* header area end */
+
+/* hero area start */
+.hero-area{
+    background: rgba(255,255,255,.85);
+}
 .hero-main-area{
-    width: 100%;
-    border: 2px solid gray;
+    font-size: 14px;
+    font-weight: 500;
+    color: green;
+    padding: 30px;
     border-radius: 10px;
-    margin-top: 20px;
-    box-shadow: 0px 0px 7px 1px rgba(128,128,128,0.75);
+    
+    animation: hero 5s ease infinite;
 
 }
-.banner-details{
-    display: flex;
-    align-items: flex-start;
+@keyframes hero{
+    0%{
+        box-shadow: 0px 0px 7px 1px rgba(128,128,128,0.75);
+    }
+    25%{
+        box-shadow: 0px 0px 7px 1px rgba(100, 238, 9, 0.75);
+    }
+    50%{
+        box-shadow: 0px 0px 7px 1px rgba(237, 6, 6, 0.75);
+    }
+    75%{
+        box-shadow: 0px 0px 7px 1px rgba(40, 10, 236, 0.75);
+    }
+    100%{
+        box-shadow: 0px 0px 7px 1px rgba(236, 7, 205, 0.75);
+    }
 }
-.banner-logo{
-    width: 200px;
-    height: 200px;
-}
-h1{
-    font-size: 30px;
-    font-weight: 600;
-    color: green;
+.hero-main-area h1{
     text-transform: uppercase;
+    color: rgb(96, 12, 12);
+    font-size: 18px;
+    font-weight: 600;
+}
+.bold{
+    color: red;
+    font-weight: 700;
+    font-size: 16px;
+}
+.bold1{
+    color: blue;
+    font-weight: 700;
+    font-size: 16px;
+}
+.hero-main-area h2{
+    color: blueviolet;
+    font-weight: 500;
+    font-size: 16px;
+}
+.hero-main-area h2 a{
+    animation: click .3s ease infinite;
+    color: red;
+}
+@keyframes click{
+    0% {
+        opacity: .25;
+    }
+    100%{
+        opacity: 100%;
+    }
 }
