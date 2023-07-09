@@ -194,3 +194,48 @@ img{
         opacity: 100%;
     }
 }
+.search-area{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background: rgba(160, 15, 174, 0.45);
+    padding: 20px 0;
+    border-radius: 20px;
+}
+.search-box{
+    color: #ffff;
+    font-size: 15px;
+}
+.search-box input{
+    padding: 7px 10px;
+    border-radius: 10px;
+    animation: searbox 5s ease infinite;
+    border: none;
+    margin-top: 7px;
+}
+@keyframes searbox{
+    0%{
+        box-shadow: 0px 0px 7px 1px rgba(128,128,128,0.75);
+    }
+    25%{
+        box-shadow: 0px 0px 7px 1px rgba(100, 238, 9, 0.75);
+    }
+    50%{
+        box-shadow: 0px 0px 7px 1px rgba(237, 6, 6, 0.75);
+    }
+    75%{
+        box-shadow: 0px 0px 7px 1px rgba(40, 10, 236, 0.75);
+    }
+    100%{
+        box-shadow: 0px 0px 7px 1px rgba(236, 7, 205, 0.75);
+    }
+}
+.searchbtn{
+    background: #ffff;
+    color: black;
+    outline: none;
+    border-radius: 7px;
+    padding: 5px;
+    font-size: 15px;
+    font-weight: 500;
+}
