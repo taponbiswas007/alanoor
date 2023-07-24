@@ -7,15 +7,17 @@
     display: none;
   }
   .navitem{
-    position: absolute;
+    
     flex-direction: column;
     background: rgb(5, 3, 4);
     padding: 20px ;
     border-radius: 7px;
     width: 100%;
-    top:65px;
-    left: 0;
-    display:none ;
+   
+    
+    row-gap: 20px;
+    z-index: 2;
+   
   }
   .navlink{
     color: white;
@@ -24,10 +26,17 @@
     background: white;
   }
   .join-area{
- display: none;
+    display: none;
   }
   .join-area-responsiv{
     display: block;
+  }
+ 
+  .navitem-area{
+    position: absolute;
+    left: 0;
+    top:65px;
+    display: none;
   }
 
 }

@@ -37,7 +37,7 @@ img{
     width: 45px;
 }
 .company-name{}
-.company-name h1{
+.company-name>h1{
     color: rgb(15, 110, 30);
     text-transform: uppercase;
     font-size: 25px;
@@ -69,6 +69,7 @@ img{
     align-items: center;
     box-shadow: 255,255,255,.25;
     padding : 0 ;
+    position: relative;
 }
 .navitem{
     display: flex;
@@ -169,7 +170,7 @@ img{
         box-shadow: 0px 0px 7px 1px rgba(236, 7, 205, 0.75);
     }
 }
-.hero-main-area h1{
+/* .hero-main-area h1{
     text-transform: uppercase;
     color: rgb(96, 12, 12);
     font-size: 18px;
@@ -245,5 +246,36 @@ img{
     border-radius: 7px;
     padding: 5px;
     font-size: 15px;
+    font-weight: 500;
+} */
+
+.slide-item{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 100px 40px;
+}
+.slide-item-title{
+    width:70%;
+}
+.slide-item-img{
+    width: 30%;
+}
+.slide-item-title>h2{
+    color: rgb(241, 18, 18);
+    font-size: 15px;
+}
+.slide-item-title>h1{
+    color: rgb(1, 87, 10);
+    font-size: 25px;
+    margin-bottom: 20px;
+}
+.buy-now{
+    color: #ffff;
+    background: rgb(142, 7, 7);
+    border: none;
+    border-radius: 10px;
+    padding: 7px 15px;
+    text-transform: uppercase;
     font-weight: 500;
 }
