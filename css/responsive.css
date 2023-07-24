@@ -1,0 +1,33 @@
+@media screen and (max-width: 992px) {
+  .toggle-bar{
+    display: block;
+    cursor: pointer;
+  }  
+  .cross-mark{
+    display: none;
+  }
+  .navitem{
+    position: absolute;
+    flex-direction: column;
+    background: rgb(5, 3, 4);
+    padding: 20px ;
+    border-radius: 7px;
+    width: 100%;
+    top:65px;
+    left: 0;
+    display:none ;
+  }
+  .navlink{
+    color: white;
+  }
+  .navlink:hover.navlink:after{
+    background: white;
+  }
+  .join-area{
+ display: none;
+  }
+  .join-area-responsiv{
+    display: block;
+  }
+
+}

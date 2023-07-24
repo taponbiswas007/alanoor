@@ -2,6 +2,10 @@ $("document").ready(function(){
     $(".price-list").click(function(){
         $(".pricelist").slideToggle();
     });
+    $(".toggle-bar").click(function(){
+      $(".navitem").slideToggle();
+
+    });
 });
 var swiper = new Swiper(".mySwiper", {
     spaceBetween: 30,

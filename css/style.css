@@ -10,7 +10,7 @@
 
 }
 body{
-    background: url(/images/body-bg1.jpg) no-repeat 0 0 / 100% 100%;
+    background: url(../images/body-bg1.jpg) no-repeat 0 0 / 100% 100%;
     font-family: 'Poppins', sans-serif;
 }
 a{
@@ -99,6 +99,10 @@ img{
     display: flex;
     justify-content: space-between;
     column-gap: 30px;
+
+}
+.join-area-responsiv{
+    display: none;
 }
 .joinbtn{
     background: rgb(15, 110, 30);
@@ -127,7 +131,11 @@ img{
     display: none;
     
 }
-
+.toggle-bar{
+    font-size: 40px;
+    color: gray;
+    display: none;
+}
 /* header area end */
 
 /* hero area start */
