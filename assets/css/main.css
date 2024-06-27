@@ -13,7 +13,11 @@ img {
 .header-wrapper nav .left button {
   background: none;
   border-radius: 20px;
-  border: 1px solid gray;
+  border: none;
+  color: #f5dd05;
+}
+.header-wrapper nav .left button .themeModeicondark {
+  display: none;
 }
 
 .full-wrapper.light-theme {

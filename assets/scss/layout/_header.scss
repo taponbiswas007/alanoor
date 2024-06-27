@@ -1,5 +1,5 @@
 .header-wrapper{
-    box-shadow: var(--bs-box-shadow);
+   box-shadow: var(--bs-box-shadow);
     nav{
         
         .left{
@@ -10,7 +10,11 @@
             button{
                background: none;
                 border-radius: 20px;
-                border: 1px solid gray ;
+             border: none;
+                color: $yellow;
+                .themeModeicondark{
+                    display: none;
+                }
             }
         }
     }
