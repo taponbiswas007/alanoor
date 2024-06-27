@@ -1,0 +1,17 @@
+.header-wrapper{
+    box-shadow: var(--bs-box-shadow);
+    nav{
+        
+        .left{
+            a{
+                width: 50px;
+                display: block;
+            }
+            button{
+               background: none;
+                border-radius: 20px;
+                border: 1px solid gray ;
+            }
+        }
+    }
+}

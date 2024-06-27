@@ -1,10 +1,9 @@
-document.getElementById('theme-toggle').addEventListener('click', function() {
-  document.body.classList.toggle('dark-theme');
-  document.body.classList.toggle('light-theme');
-  
-  if (document.body.classList.contains('dark-theme')) {
-    this.textContent = 'Light Mode';
-  } else {
-    this.textContent = 'Dark Mode';
-  }
+$(document).ready(function(){
+  $("#theme-toggle").click(function(){
+    if ($("#themeMode").hasClass("light-theme")) {
+      $("#themeMode").removeClass("light-theme").addClass("dark-theme");
+    } else {
+      $("#themeMode").removeClass("dark-theme").addClass("light-theme");
+    }
+  });
 });
