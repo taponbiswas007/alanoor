@@ -2,22 +2,65 @@ img {
   width: 100%;
 }
 
-.header-wrapper {
+.full-wrapper .header-wrapper {
   -webkit-box-shadow: var(--bs-box-shadow);
           box-shadow: var(--bs-box-shadow);
 }
-.header-wrapper nav .left a {
+.full-wrapper .header-wrapper nav .left a {
   width: 50px;
   display: block;
 }
-.header-wrapper nav .left button {
-  background: none;
-  border-radius: 20px;
+.full-wrapper .header-wrapper nav .left button {
+  background-color: #495057;
+  /* Light theme background */
   border: none;
-  color: #f5dd05;
+  border-radius: 50px;
+  padding: 12px 20px;
+  cursor: pointer;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  position: relative;
+  -webkit-transition: background-color 0.3s ease, -webkit-transform 0.3s ease;
+  transition: background-color 0.3s ease, -webkit-transform 0.3s ease;
+  transition: background-color 0.3s ease, transform 0.3s ease;
+  transition: background-color 0.3s ease, transform 0.3s ease, -webkit-transform 0.3s ease;
+  -webkit-box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+          box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
 }
-.header-wrapper nav .left button .themeModeicondark {
-  display: none;
+.full-wrapper .header-wrapper nav .left button i {
+  font-size: 20px;
+  color: #fff;
+  /* Light theme icon color */
+  -webkit-transition: opacity 0.3s ease, -webkit-transform 0.3s ease;
+  transition: opacity 0.3s ease, -webkit-transform 0.3s ease;
+  transition: opacity 0.3s ease, transform 0.3s ease;
+  transition: opacity 0.3s ease, transform 0.3s ease, -webkit-transform 0.3s ease;
+  position: absolute;
+}
+.full-wrapper .header-wrapper nav .left button .themeModeiconlight {
+  opacity: 1;
+  -webkit-transform: translateY(0);
+          transform: translateY(0);
+}
+.full-wrapper .header-wrapper nav .left button .themeModeicondark {
+  opacity: 0;
+  -webkit-transform: translateY(10px);
+          transform: translateY(10px);
+}
+.full-wrapper .header-wrapper nav .left button:hover {
+  -webkit-transform: scale(1.05);
+          transform: scale(1.05);
+}
+.full-wrapper .header-wrapper nav .left button:active {
+  -webkit-transform: scale(0.95);
+          transform: scale(0.95);
 }
 
 .full-wrapper.light-theme {
@@ -33,10 +76,28 @@ img {
   background-color: #343a40 !important;
   color: #ffffff !important;
 }
-.full-wrapper.dark-theme .navbar, .full-wrapper.dark-theme .footer {
+.full-wrapper.dark-theme #theme-toggle {
+  background-color: #fff !important;
+}
+.full-wrapper.dark-theme #theme-toggle .themeModeiconlight {
+  opacity: 0;
+  -webkit-transform: translateY(-10px);
+          transform: translateY(-10px);
+}
+.full-wrapper.dark-theme #theme-toggle .themeModeicondark {
+  opacity: 1;
+  -webkit-transform: translateY(0);
+          transform: translateY(0);
+}
+.full-wrapper.dark-theme #theme-toggle i {
+  color: #000;
+}
+.full-wrapper.dark-theme .navbar,
+.full-wrapper.dark-theme .footer {
   background-color: #343a40 !important;
   color: #ffffff !important;
 }
-.full-wrapper.dark-theme .navbar a, .full-wrapper.dark-theme .footer a {
+.full-wrapper.dark-theme .navbar a,
+.full-wrapper.dark-theme .footer a {
   color: #ffffff !important;
 }/*# sourceMappingURL=main.css.map */

@@ -1,13 +1,31 @@
 .full-wrapper.dark-theme {
-    background-color: $dark-background !important;
-    color: $dark-text !important;
-  
-    .navbar, .footer {
-      background-color: $dark-background !important;
-      color: $dark-text !important;
-      a{
-        color: $dark-text !important ;
-      }
+  background-color: $dark-background !important;
+  color: $dark-text !important;
+
+  #theme-toggle {
+    background-color: $white !important;
+
+    .themeModeiconlight {
+      opacity: 0;
+      transform: translateY(-10px);
+    }
+
+    .themeModeicondark {
+      opacity: 1;
+      transform: translateY(0);
+    }
+    i{
+      color: $black;
     }
   }
-  
+
+  .navbar,
+  .footer {
+    background-color: $dark-background !important;
+    color: $dark-text !important;
+
+    a {
+      color: $dark-text !important;
+    }
+  }
+}
