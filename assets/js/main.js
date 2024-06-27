@@ -1,24 +1,10 @@
-$("document").ready(function(){
-    $(".toggle-bar").click(function(){
-      $(".navitem-area").slideToggle();
-      $(".cross-mark").toggle();
-      $(".bars").toggle();
-
-    });
-});
-var swiper = new Swiper(".mySwiper", {
-  spaceBetween: 30,
-  centeredSlides: true,
-  autoplay: {
-    delay: 2500,
-    disableOnInteraction: false,
-  },
-  pagination: {
-    el: ".swiper-pagination",
-    clickable: true,
-  },
-  navigation: {
-    nextEl: ".swiper-button-next",
-    prevEl: ".swiper-button-prev",
-  },
+document.getElementById('theme-toggle').addEventListener('click', function() {
+  document.body.classList.toggle('dark-theme');
+  document.body.classList.toggle('light-theme');
+  
+  if (document.body.classList.contains('dark-theme')) {
+    this.textContent = 'Light Mode';
+  } else {
+    this.textContent = 'Dark Mode';
+  }
 });

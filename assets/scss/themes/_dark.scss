@@ -1,0 +1,10 @@
+body.dark-theme {
+    background-color: $dark-background !important;
+    color: $dark-text !important;
+  
+    .navbar, .footer {
+      background-color: $dark-background !important;
+      color: $dark-text !important;
+    }
+  }
+  
