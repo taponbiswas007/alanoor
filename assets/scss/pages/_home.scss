@@ -1,0 +1,136 @@
+.header-and-hero {
+
+    position: relative;
+    height: 700px;
+
+
+    .hero-wrapper {
+        .hero-main-area {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            padding: 150px 0 50px 0;
+
+            .hero-left {
+                width: 50%;
+
+                h2 {
+                    color: $blue;
+                    font-family: $roboto;
+                    font-size: 20px;
+                    font-weight: 400;
+                    margin-bottom: 15px;
+
+                    span {
+                        font-weight: 600;
+                        color: $green;
+                        font-size: 35px;
+                    }
+                }
+
+                h1 {
+                    color: $blue;
+                    font-family: $roboto;
+                    font-size: 35px;
+                    font-weight: 600;
+                    margin-bottom: 20px;
+                }
+
+                p {
+                    color: $black;
+                    font-family: $roboto;
+                    font-size: 20px;
+                    font-weight: 500;
+                }
+            }
+
+            .hero-right {
+                width: 50%;
+
+                h1 {
+                    color: $red;
+                    text-transform: uppercase;
+                    text-align: center;
+                    font-family: $roboto;
+                    font-size: 35px;
+                    font-weight: 600;
+                    margin-bottom: 20px;
+                }
+
+                .dealership-company-list {
+                    overflow: hidden;
+                    height: 100px;
+
+
+                    span {
+                        display: block;
+                        font-size: 30px;
+                        font-family: $roboto;
+                        font-weight: 600;
+                        transform: translateY(100%);
+                        animation-iteration-count: infinite;
+                        width: 100%;
+                        padding: 20px;
+                        text-align: center;
+                        color: $blue;
+
+                        &:nth-child(1) {
+                            animation: slide 1s linear infinite;
+                            animation-delay: 7s;
+                        }
+
+                        &:nth-child(2) {
+                            animation: slide 1s linear infinite;
+                            animation-delay: 6s;
+
+                        }
+
+                        &:nth-child(3) {
+                            animation: slide 7s linear infinite;
+                            animation-delay: 5s;
+
+                        }
+
+                        &:nth-child(4) {
+                            animation: slide 1s linear infinite;
+                            animation-delay: 4s;
+
+                        }
+
+                        &:nth-child(5) {
+                            animation: slide 1s linear infinite;
+                            animation-delay: 3s;
+
+                        }
+
+                        &:nth-child(6) {
+                            animation: slide 1s linear infinite;
+                            animation-delay: 2s;
+                        }
+
+                        &:nth-child(7) {
+                            animation: slide 1s linear infinite;
+                            animation-delay: 1s;
+
+                        }
+
+                    }
+
+                    @keyframes slide {
+                        0% {
+                            transform: translateY(100%);
+                        }
+
+                        50% {
+                            transform: translateY(0);
+                        }
+
+                        100% {
+                            transform: translateY(-100%);
+                        }
+                    }
+                }
+            }
+        }
+    }
+}

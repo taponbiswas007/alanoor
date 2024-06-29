@@ -131,15 +131,155 @@ img {
           transform: scale(0.95);
 }
 
+.header-and-hero {
+  position: relative;
+  height: 700px;
+}
+.header-and-hero .hero-wrapper .hero-main-area {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  padding: 150px 0 50px 0;
+}
+.header-and-hero .hero-wrapper .hero-main-area .hero-left {
+  width: 50%;
+}
+.header-and-hero .hero-wrapper .hero-main-area .hero-left h2 {
+  color: #15399E;
+  font-family: "Roboto", sans-serif;
+  font-size: 20px;
+  font-weight: 400;
+  margin-bottom: 15px;
+}
+.header-and-hero .hero-wrapper .hero-main-area .hero-left h2 span {
+  font-weight: 600;
+  color: #198754;
+  font-size: 35px;
+}
+.header-and-hero .hero-wrapper .hero-main-area .hero-left h1 {
+  color: #15399E;
+  font-family: "Roboto", sans-serif;
+  font-size: 35px;
+  font-weight: 600;
+  margin-bottom: 20px;
+}
+.header-and-hero .hero-wrapper .hero-main-area .hero-left p {
+  color: #000;
+  font-family: "Roboto", sans-serif;
+  font-size: 20px;
+  font-weight: 500;
+}
+.header-and-hero .hero-wrapper .hero-main-area .hero-right {
+  width: 50%;
+}
+.header-and-hero .hero-wrapper .hero-main-area .hero-right h1 {
+  color: #dc3545;
+  text-transform: uppercase;
+  text-align: center;
+  font-family: "Roboto", sans-serif;
+  font-size: 35px;
+  font-weight: 600;
+  margin-bottom: 20px;
+}
+.header-and-hero .hero-wrapper .hero-main-area .hero-right .dealership-company-list {
+  overflow: hidden;
+  height: 100px;
+}
+.header-and-hero .hero-wrapper .hero-main-area .hero-right .dealership-company-list span {
+  display: block;
+  font-size: 30px;
+  font-family: "Roboto", sans-serif;
+  font-weight: 600;
+  -webkit-transform: translateY(100%);
+          transform: translateY(100%);
+  -webkit-animation-iteration-count: infinite;
+          animation-iteration-count: infinite;
+  width: 100%;
+  padding: 20px;
+  text-align: center;
+  color: #15399E;
+}
+.header-and-hero .hero-wrapper .hero-main-area .hero-right .dealership-company-list span:nth-child(1) {
+  -webkit-animation: slide 1s linear infinite;
+          animation: slide 1s linear infinite;
+  -webkit-animation-delay: 7s;
+          animation-delay: 7s;
+}
+.header-and-hero .hero-wrapper .hero-main-area .hero-right .dealership-company-list span:nth-child(2) {
+  -webkit-animation: slide 1s linear infinite;
+          animation: slide 1s linear infinite;
+  -webkit-animation-delay: 6s;
+          animation-delay: 6s;
+}
+.header-and-hero .hero-wrapper .hero-main-area .hero-right .dealership-company-list span:nth-child(3) {
+  -webkit-animation: slide 7s linear infinite;
+          animation: slide 7s linear infinite;
+  -webkit-animation-delay: 5s;
+          animation-delay: 5s;
+}
+.header-and-hero .hero-wrapper .hero-main-area .hero-right .dealership-company-list span:nth-child(4) {
+  -webkit-animation: slide 1s linear infinite;
+          animation: slide 1s linear infinite;
+  -webkit-animation-delay: 4s;
+          animation-delay: 4s;
+}
+.header-and-hero .hero-wrapper .hero-main-area .hero-right .dealership-company-list span:nth-child(5) {
+  -webkit-animation: slide 1s linear infinite;
+          animation: slide 1s linear infinite;
+  -webkit-animation-delay: 3s;
+          animation-delay: 3s;
+}
+.header-and-hero .hero-wrapper .hero-main-area .hero-right .dealership-company-list span:nth-child(6) {
+  -webkit-animation: slide 1s linear infinite;
+          animation: slide 1s linear infinite;
+  -webkit-animation-delay: 2s;
+          animation-delay: 2s;
+}
+.header-and-hero .hero-wrapper .hero-main-area .hero-right .dealership-company-list span:nth-child(7) {
+  -webkit-animation: slide 1s linear infinite;
+          animation: slide 1s linear infinite;
+  -webkit-animation-delay: 1s;
+          animation-delay: 1s;
+}
+@-webkit-keyframes slide {
+  0% {
+    -webkit-transform: translateY(100%);
+            transform: translateY(100%);
+  }
+  50% {
+    -webkit-transform: translateY(0);
+            transform: translateY(0);
+  }
+  100% {
+    -webkit-transform: translateY(-100%);
+            transform: translateY(-100%);
+  }
+}
+@keyframes slide {
+  0% {
+    -webkit-transform: translateY(100%);
+            transform: translateY(100%);
+  }
+  50% {
+    -webkit-transform: translateY(0);
+            transform: translateY(0);
+  }
+  100% {
+    -webkit-transform: translateY(-100%);
+            transform: translateY(-100%);
+  }
+}
+
 .full-wrapper.light-theme {
   background-color: #ffffff !important;
   color: #000000 !important;
 }
-.full-wrapper.light-theme .navbar, .full-wrapper.light-theme .footer {
-  background-color: #ffffff !important;
-  color: #000000 !important;
-}
-
 .full-wrapper.dark-theme {
   background-color: #070630 !important;
   color: #ffffff !important;
@@ -159,13 +299,4 @@ img {
 }
 .full-wrapper.dark-theme #theme-toggle i {
   color: #000;
-}
-.full-wrapper.dark-theme .navbar,
-.full-wrapper.dark-theme .footer {
-  background-color: #070630 !important;
-  color: #ffffff !important;
-}
-.full-wrapper.dark-theme .navbar a,
-.full-wrapper.dark-theme .footer a {
-  color: #ffffff !important;
 }/*# sourceMappingURL=main.css.map */
