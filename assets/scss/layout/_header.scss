@@ -1,56 +1,17 @@
 .full-wrapper {
     .header-wrapper {
-        box-shadow: var(--bs-box-shadow);
+      //  box-shadow: var(--bs-box-shadow);
 
         nav {
             .topbar{
                 width: 100%;
                 .left {
                     a {
-                        width: 50px;
+                        width: 100px;
                         display: block;
                     }
     
-                    button {
-                        background-color: $gray-700;
-                        /* Light theme background */
-                        border: none;
-                        border-radius: 50px;
-                        padding: 12px 20px;
-                        cursor: pointer;
-                        display: flex;
-                        align-items: center;
-                        justify-content: center;
-                        position: relative;
-                        transition: background-color 0.3s ease, transform 0.3s ease;
-                        box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
-    
-                        i {
-                            font-size: 20px;
-                            color: $white;
-                            /* Light theme icon color */
-                            transition: opacity 0.3s ease, transform 0.3s ease;
-                            position: absolute;
-                        }
-    
-                        .themeModeiconlight {
-                            opacity: 1;
-                            transform: translateY(0);
-                        }
-    
-                        .themeModeicondark {
-                            opacity: 0;
-                            transform: translateY(10px);
-                        }
-    
-                        &:hover {
-                            transform: scale(1.05);
-                        }
-    
-                        &:active {
-                            transform: scale(0.95);
-                        }
-                    }
+                  
                 }
                 .right{
                     ul{
@@ -73,6 +34,48 @@
                 }
             }
           
+        }
+    }
+}
+.settings{
+    button {
+        background-color: $gray-700;
+        /* Light theme background */
+        border: none;
+        border-radius: 50px;
+        padding: 12px 20px;
+        cursor: pointer;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        position: relative;
+        transition: background-color 0.3s ease, transform 0.3s ease;
+        box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+
+        i {
+            font-size: 20px;
+            color: $white;
+            /* Light theme icon color */
+            transition: opacity 0.3s ease, transform 0.3s ease;
+            position: absolute;
+        }
+
+        .themeModeiconlight {
+            opacity: 1;
+            transform: translateY(0);
+        }
+
+        .themeModeicondark {
+            opacity: 0;
+            transform: translateY(10px);
+        }
+
+        &:hover {
+            transform: scale(1.05);
+        }
+
+        &:active {
+            transform: scale(0.95);
         }
     }
 }
