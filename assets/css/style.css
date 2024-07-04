@@ -135,10 +135,11 @@ h6,
 
 @media (max-width: 991.98px) {
     .sticky-top.navbar-light {
-         position: fixed; 
-        background: #ffffff; 
-     
+        position: fixed;
+        background: #ffffff;
+
     }
+
     .navbar-light {
         position: absolute;
         width: 100%;
@@ -147,12 +148,15 @@ h6,
         border-bottom: 1px solid rgba(256, 256, 256, .1);
         z-index: 999;
     }
-    .navbar-light .navbar-toggler{
+
+    .navbar-light .navbar-toggler {
         color: #ffffff;
     }
-    .sticky-top .navbar-toggler{
+
+    .sticky-top .navbar-toggler {
         color: #000 !important;
     }
+
     .navbar-light .navbar-collapse {
         margin-top: 15px;
         border-top: 1px solid #DDDDDD;
@@ -174,7 +178,7 @@ h6,
     .navbar-light .navbar-brand img {
         max-height: 45px;
     }
-   
+
 }
 
 @media (min-width: 992px) {
@@ -186,7 +190,7 @@ h6,
         border-bottom: 1px solid rgba(256, 256, 256, .1);
         z-index: 999;
     }
-    
+
     .sticky-top.navbar-light {
         position: fixed;
         background: #FFFFFF;
