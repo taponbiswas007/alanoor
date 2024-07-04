@@ -3,31 +3,11 @@
 @import 'abstracts/mixins';
 @import 'abstracts/functions';
 
-// base
-@import 'base/reset';
-@import 'base/typography';
-@import 'base/base';
-
-// layout
-@import 'layout/header';
-@import 'layout/footer';
-@import 'layout/sidebar';
-@import 'layout/grid';
-@import 'layout/container';
-
-// components
-@import 'components/buttons';
-@import 'components/cards';
-@import 'components/forms';
-@import 'components/modals';
-
 // pages
 @import 'pages/home';
 @import 'pages/about';
 @import 'pages/contact';
 
-// themes
-@import 'themes/default';
-@import 'themes/dark';
+
 
 
