@@ -1,0 +1,33 @@
+.product-cart {
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1), 0 6px 20px rgba(0, 0, 0, 0.1) !important;
+    &:hover .buynowbtn {
+        bottom: 0;
+    }
+    .product-cartinner{
+        &:hover .buynowbtn {
+            bottom: 0;
+        }
+    
+        .buynowbtn {
+            position: absolute;
+            bottom: -40px;
+            left: 50%;
+            transform: translateX(-50%);
+            color: #6222CC;
+            background: #ffffff;
+            border-radius: 10px 10px 0 0;
+            transition: .5s;
+            z-index: 1;
+            width: 100px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            column-gap: 5px;
+            padding: 10px 5px;
+            &:hover {
+                color: #000000;
+                background: #FBA504;
+            }
+        }
+    }
+}
