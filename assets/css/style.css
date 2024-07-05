@@ -5,7 +5,9 @@
     --light: #F6F4F9;
     --dark: #04000B;
 }
-
+body{
+    background: #fff !important;
+}
 
 /*** Spinner ***/
 #spinner {
@@ -239,16 +241,25 @@ h6,
         url(../img/blob-bottom-left.png),
         url(../img/blob-bottom-right.png),
         url(../img/blob-center.png),
-        url(../img/bg-bottom.png);
+        url(../img/1.png);
     background-position:
         left 0px top 0px,
         right 0px top 0px,
         left 0px bottom 0px,
         right 0px bottom 0px,
         center center,
-        center bottom;
+        left 0 bottom 0;
     background-repeat: no-repeat;
+    background-size:
+        auto,
+        auto,
+        auto,
+        auto,
+        auto,
+        100% auto;
 }
+
+
 
 @media (max-width: 991.98px) {
     .hero-header {
@@ -541,6 +552,10 @@ h6,
         center top,
         center center;
     background-repeat: no-repeat;
+    background-size:
+    100% auto,
+    auto
+    ;
 }
 
 .footer .btn.btn-social {
