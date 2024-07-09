@@ -697,6 +697,20 @@
 
     <!-- Template Javascript -->
     <script src="assets/js/main.js"></script>
+
+    <script>
+        $(document).ready(function() {
+            $('a').on('click', function(event) {
+                event.preventDefault(); // Prevent the default link click behavior
+    
+                var href = $(this).attr('href'); // Get the link's href attribute
+    
+                // Use JavaScript to navigate to the new page and force a hard refresh
+                window.location.href = href;
+            });
+        });
+    </script>
+
 </body>
 
 </html>
