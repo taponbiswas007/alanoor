@@ -92,3 +92,27 @@
     
 })(jQuery);
 
+$(document).ready(function() {
+    $('a').on('click', function(event) {
+        event.preventDefault(); // Prevent the default link click behavior
+
+        var href = $(this).attr('href'); // Get the link's href attribute
+
+        // Set a flag in sessionStorage to indicate the page needs a hard refresh
+        sessionStorage.setItem('needsHardRefresh', 'true');
+
+        // Navigate to the target page
+        window.location.href = href;
+    });
+
+    // Check if the page needs a hard refresh
+    if (sessionStorage.getItem('needsHardRefresh') === 'true') {
+        // Remove the flag
+        sessionStorage.removeItem('needsHardRefresh');
+
+        // Reload the page after 0.5 seconds to force a hard refresh
+        setTimeout(function() {
+            window.location.reload(true); // true forces the reload from the server
+        }, 500); // 0.5 seconds
+    }
+});
