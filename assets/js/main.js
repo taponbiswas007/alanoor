@@ -93,7 +93,7 @@
 })(jQuery);
 
 $(document).ready(function() {
-    $('a').on('click', function(event) {
+    $('.nav-link').on('click', function(event) {
         event.preventDefault(); // Prevent the default link click behavior
 
         var href = $(this).attr('href'); // Get the link's href attribute
