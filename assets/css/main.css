@@ -51,3 +51,16 @@
   color: #000000;
   background: #FBA504;
 }
+
+.submit-disabled {
+  opacity: 0.7;
+  pointer-events: none;
+}
+
+.submit-enabled {
+  opacity: 1;
+}
+
+textarea {
+  resize: none;
+}/*# sourceMappingURL=main.css.map */
