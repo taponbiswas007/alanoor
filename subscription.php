@@ -7,10 +7,10 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
     // Validate email
     if (filter_var($email, FILTER_VALIDATE_EMAIL)) {
         // Database connection
-        $servername = "your_servername";
-        $username = "your_username";
-        $password = "your_password";
-        $dbname = "your_database";
+        $servername = "localhost";
+        $username = "root";
+        $password = "";
+        $dbname = "alanoor";
 
         // Create connection
         $conn = new mysqli($servername, $username, $password, $dbname);
