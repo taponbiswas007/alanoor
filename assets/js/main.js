@@ -113,6 +113,6 @@ $(document).ready(function() {
         // Reload the page after 0.5 seconds to force a hard refresh
         setTimeout(function() {
             window.location.reload(true); // true forces the reload from the server
-        }, 100); // 0.5 seconds
+        }, 300); // 0.5 seconds
     }
 });
