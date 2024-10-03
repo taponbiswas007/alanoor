@@ -116,3 +116,23 @@ $(document).ready(function() {
         }, 300); // 0.5 seconds
     }
 });
+
+
+const playBtn = document.getElementById('play-btn');
+const videoPlayer = document.getElementById('video-player');
+const youtubeVideo = document.getElementById('youtube-video');
+const closeBtn = document.getElementById('close-btn');
+
+// YouTube video URL with embed format
+const videoUrl = 'https://www.youtube.com/embed/V_SzExu2aV0';
+
+playBtn.addEventListener('click', function() {
+  youtubeVideo.src = videoUrl;  // Load the video URL
+  videoPlayer.style.display = 'block';  // Show the video player
+});
+
+closeBtn.addEventListener('click', function() {
+  youtubeVideo.src = '';  // Stop the video
+  videoPlayer.style.display = 'none';  // Hide the video player
+});
+

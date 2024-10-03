@@ -201,7 +201,19 @@
                        
                     </div>
                     <div class="col-lg-6">
-                        <img class="img-fluid wow zoomIn" data-wow-delay="0.5s" src="assets/img/about.png">
+                        <!-- <img class="img-fluid wow zoomIn" data-wow-delay="0.5s" src="assets/img/about.png"> -->
+                        <div class="video-container">
+                            <div class="video-thumbnail">
+                              <button class="play-button" id="play-btn"></button>
+                              
+                            </div>
+                            <div id="video-player" class="hidden">
+                              <iframe id="youtube-video" src="" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+                              <button id="close-btn" class="close-btn hidden">&times;</button>
+                            </div>
+                          </div>
+                          
+                          
                     </div>
                 </div>
             </div>
