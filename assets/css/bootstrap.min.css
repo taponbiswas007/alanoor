@@ -18,7 +18,8 @@
     --bs-white: #fff;
     --bs-gray: #6c757d;
     --bs-gray-dark: #343a40;
-    --bs-primary: #6222CC;
+    /* --bs-primary: #6222CC; */
+    --bs-primary: #006400;
     --bs-secondary: #FBA504;
     --bs-success: #198754;
     --bs-info: #0dcaf0;
@@ -8345,7 +8346,8 @@ fieldset:disabled .btn {
 }
 
 .bg-primary {
-    background-color: #4C00D7 !important
+    /* background-color: #4C00D7 !important */
+    background-color: #154734 !important
 }
 
 .bg-secondary {
