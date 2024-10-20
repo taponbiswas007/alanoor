@@ -633,72 +633,153 @@ h6,
     position: relative;
     width: 100%;
     margin: auto;
-     box-shadow: 0 4px 4px 0 rgba(0, 0, 0, .5), 0 4px 8px 0 rgba(0, 0, 0, .5);
+   
    
   }
-  .video-container::after{
-    position: absolute;
-    top: 0;
-    left: 0;
-    height: 100%;
-    width: 100%;
-    background: rgba(0, 0, 0, .5);
-    content: ' ';
-    z-index: 1;
-  }
-  .video-thumbnail {
-    background: url(../img/hero_2.png) no-repeat 0 0 / 100% 100%;
-    width: 100%;
-    height: 400px;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-  }
-  
-  .play-button {
-    position: relative;
-    width: 100px;
-    height: 100px;
-    background-color: #000;
+  button.open-popup {
+    background: radial-gradient(circle, rgba(21,71,52,1) 0%, rgba(97,189,148,1) 100%);
+    color: white;
+    font-size: 63px;
+    border: none;
     border-radius: 50%;
+    cursor: pointer;
+    position: absolute;
+    z-index: 1;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    width: 110px;
+    height: 110px;
     display: flex;
     justify-content: center;
     align-items: center;
-    cursor: pointer;
-    transition: background-color 0.3s ease;
-    z-index: 2;
-  }
+    box-shadow: 0px 8px 15px rgba(0, 0, 0, 0.3);
+    overflow: visible;
+    transition: background 0.3s ease, box-shadow 0.3s ease, transform 0.3s ease;
+    opacity: 0.9;
+}
 
-  .play-button:hover {
-    background-color: #333;
-  }
+button.open-popup:hover {
+    background-color: #2E8B57; /* Softer green hover effect */
+    box-shadow: 0px 10px 20px rgba(46, 139, 87, 0.5), 0 0 10px rgba(46, 139, 87, 0.2);
+    /* transform: scale(1.1);  */
+}
 
-  .play-button::before {
+button.open-popup::before, button.open-popup::after {
     content: '';
     position: absolute;
-    width: 0;
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
+    background-color: rgba(97,189,148, 0.3); /* Softer green wave color */
+    animation: wave 2s infinite ease-out;
+    z-index: -1;
+}
+
+button.open-popup::after {
+    animation-delay: .5s;
+}
+
+@keyframes wave {
+    0% {
+        transform: scale(1);
+        opacity: 1;
+    }
+    100% {
+        transform: scale(5);
+        opacity: 0;
+    }
+}
+
+/* Add subtle glow effect */
+button.open-popup:before {
+    content: '';
+    position: absolute;
+    width: 140px;
+    height: 140px;
+    border-radius: 50%;
+    background-color: rgba(97,189,148, 0.6); /* Greenish glow */
+    z-index: -2;
+    box-shadow: 0 0 25px rgba(97,189,148, 0.6);
+    animation: glow 1.5s ease-in-out infinite alternate;
+}
+
+@keyframes glow {
+    from {
+        transform: scale(1);
+        opacity: 1;
+    }
+    to {
+        transform: scale(1.2);
+        opacity: 0.8;
+    }
+}
+
+
+
+/* Modal Styles */
+.modal {
+    display: none;
+    position: fixed;
+    z-index: 1000;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.4); /* Dark overlay */
+    justify-content: center;
+    align-items: center;
+    overflow: hidden;
+}
+
+.modal-content {
+    position: relative;
+    width: 90%;
+    max-width: 800px;
+    background: none;
+    border: none;
+    border-radius: 8px;
+}
+
+/* Close Button */
+span.close {
+    position: absolute;
+    top: 10px;
+    right: 20px;
+    color: #fff;
+    font-size: 30px;
+    cursor: pointer;
+}
+
+span.close:hover {
+    color: #ccc;
+}
+
+/* Video Wrapper */
+.video-wrapper {
+    position: relative;
+    padding-bottom: 56.25%; /* 16:9 Aspect Ratio */
     height: 0;
-    border-left: 25px solid #fff;
-    border-top: 15px solid transparent;
-    border-bottom: 15px solid transparent;
-  }
-  
-  #video-player {
+    overflow: hidden;
+}
+
+.video-wrapper iframe {
     position: absolute;
     top: 0;
     left: 0;
     width: 100%;
     height: 100%;
-    background: black;
-    display: none;
-    z-index: 3;
-  }
+    border: none;
+}
+
+/* Responsive Media Query */
+@media (max-width: 768px) {
+    .modal-content {
+        width: 95%;
+    }
+
   
-  #youtube-video {
-    width: 100%;
-    height: 100%;
-  }
-  
+}
   .hidden {
     display: none;
   }

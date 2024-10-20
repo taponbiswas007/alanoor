@@ -118,21 +118,45 @@ $(document).ready(function() {
 });
 
 
-const playBtn = document.getElementById('play-btn');
-const videoPlayer = document.getElementById('video-player');
-const youtubeVideo = document.getElementById('youtube-video');
+// const playBtn = document.getElementById('play-btn');
+// const videoPlayer = document.getElementById('video-player');
+// const youtubeVideo = document.getElementById('youtube-video');
+// const closeBtn = document.getElementById('close-btn');
+
+// // YouTube video URL with embed format
+// const videoUrl = 'https://www.youtube.com/embed/V_SzExu2aV0';
+
+// playBtn.addEventListener('click', function() {
+//   youtubeVideo.src = videoUrl;  // Load the video URL
+//   videoPlayer.style.display = 'block';  // Show the video player
+// });
+
+// closeBtn.addEventListener('click', function() {
+//   youtubeVideo.src = '';  // Stop the video
+//   videoPlayer.style.display = 'none';  // Hide the video player
+// });
+// Get elements
+const modal = document.getElementById('video-modal');
+const openBtn = document.getElementById('open-popup-btn');
 const closeBtn = document.getElementById('close-btn');
 
-// YouTube video URL with embed format
-const videoUrl = 'https://www.youtube.com/embed/V_SzExu2aV0';
+// Open the modal
+openBtn.onclick = function () {
+    modal.style.display = 'flex'; // Show modal
+}
 
-playBtn.addEventListener('click', function() {
-  youtubeVideo.src = videoUrl;  // Load the video URL
-  videoPlayer.style.display = 'block';  // Show the video player
-});
+// Close the modal when user clicks the "x" button
+closeBtn.onclick = function () {
+    modal.style.display = 'none'; // Hide modal
+    const iframe = document.getElementById('youtube-video');
+    iframe.src = iframe.src; // Reset the iframe to stop the video
+}
 
-closeBtn.addEventListener('click', function() {
-  youtubeVideo.src = '';  // Stop the video
-  videoPlayer.style.display = 'none';  // Hide the video player
-});
-
+// Close the modal if the user clicks outside the video
+window.onclick = function (event) {
+    if (event.target == modal) {
+        modal.style.display = 'none'; // Hide modal
+        const iframe = document.getElementById('youtube-video');
+        iframe.src = iframe.src; // Reset the iframe to stop the video
+    }
+}

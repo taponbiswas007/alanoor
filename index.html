@@ -201,16 +201,15 @@
                        
                     </div>
                     <div class="col-lg-6">
+                        
                         <!-- <img class="img-fluid wow zoomIn" data-wow-delay="0.5s" src="assets/img/about.png"> -->
                         <div class="video-container">
                             <div class="video-thumbnail">
-                              <button class="play-button" id="play-btn"></button>
-                              
+                              <button class="open-popup" id="open-popup-btn"><i class="fa-regular fa-circle-play"></i></button>
+                             <img class="img-fluid wow zoomIn" data-wow-delay="0.5s" src="assets/img/about.png">
                             </div>
-                            <div id="video-player" class="hidden">
-                              <iframe id="youtube-video" src="" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
-                              <button id="close-btn" class="close-btn hidden">&times;</button>
-                            </div>
+                          
+ 
                           </div>
                           
                           
@@ -683,6 +682,21 @@
         </div>
         <!-- Footer End -->
 
+        <!-- video player -->
+        <div id="video-modal" class="modal">
+            <!-- Modal content -->
+            <div class="modal-content">
+                <span class="close" id="close-btn">&times;</span>
+                <div class="video-wrapper">
+                    <iframe id="youtube-video" 
+                            src="https://www.youtube.com/embed/dXV4qzQ0ZYs?si=KrIqUKXRSU88rDdY" 
+                            frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" 
+                            allowfullscreen>
+                    </iframe>
+                </div>
+            </div>
+        </div>
+        <!-- video player -->
 
         <!-- Back to Top -->
         <a href="#" class="btn btn-lg btn-secondary btn-lg-square back-to-top"><i class="bi bi-arrow-up"></i></a>
